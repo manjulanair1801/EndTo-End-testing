@@ -1,0 +1,21 @@
+package selenium.web.automation;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class LoginPageTest {
+	
+	
+	@Test
+	
+	public void PageAutomation() {
+		
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\manju\\Downloads\\chromedriver\\chromedriver.exe" );		
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("");
+				
+		
+	}
+
+}

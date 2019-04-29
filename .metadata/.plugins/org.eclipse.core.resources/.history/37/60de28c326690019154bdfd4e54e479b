@@ -1,0 +1,9 @@
+
+public class Base {
+
+	public void initilializeDriver()
+	{
+		Properties prop =new Properties();
+		FileInputStream fls =new FileInputStream("C:\\Users\\manju\\EclipseWorkspace1\\E2EProject\\src\\test\\resources\\Properties\\Config.Properties");
+	}
+}

@@ -1,0 +1,26 @@
+import java.util.Properties;
+
+public class Base {
+
+	public void initilializeDriver()
+	{
+		Properties prop =new Properties();
+		FileInputStream fls =new FileInputStream("C:\\Users\\manju\\EclipseWorkspace1\\E2EProject\\src\\test\\resources\\Properties\\Config.Properties");
+		prop.load(fls);
+		String browsername =prop.getProperty("browser");
+		
+		if (browsername == "chrome") {
+			//execute the chrome browser
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\manju\\Downloads\\chromedriver\\chromedriver.exe");
+			WebDriver driver = new ChromeDriver();
+			
+		}else if
+		{
+			//execute the firefox browser
+		}else if
+		{
+			//execute the IE
+		}
+		
+	}
+}

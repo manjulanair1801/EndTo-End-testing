@@ -1,0 +1,26 @@
+package Academy;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BasePage {
+	public WebDriver driver;
+	public static  FileInputStream fls;
+	public Properties prop;
+	
+	public WebDriver intializedriver() throws Throwable {
+	 prop = new Properties ();
+	 fls=new FileInputStream("C:\\Users\\manju\\EclipseWorkspace1\\E2EProject1\\src\\test\\resources\\Properties\\data.properties");
+	 prop.load(fls);
+	 driver =new ChromeDriver();
+	 //System.setProperty("webdriver.chrome.driver", "C://Users//manju//EclipseWorkspace1//E2EProject1//src//test//resources//Drivers//chromedriver.exe");
+	 System.setProperty("webdriver.chrome.driver","C:\\Users\\manju\\Downloads\\chromedriver\\chromedriver.exe" );
+	 driver.get("http://www.google.com");
+	  return driver;
+		
+	}
+}

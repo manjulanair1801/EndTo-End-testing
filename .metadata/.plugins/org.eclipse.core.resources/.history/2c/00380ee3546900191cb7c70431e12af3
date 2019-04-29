@@ -1,0 +1,21 @@
+package Academy;
+
+import org.testng.annotations.Test;
+
+import page.objects.LandingPage;
+
+public class HomepageTest extends BasePage {
+	
+	@Test
+	public void BasePagenavigation() throws Throwable {
+		driver=intializedriver();
+		driver.get("https://www.khanacademy.org/");
+		LandingPage l = new LandingPage(driver);
+		l.getLogin().click();
+		
+		pu
+		
+		
+	}
+
+}

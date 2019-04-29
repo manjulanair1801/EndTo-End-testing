@@ -1,0 +1,16 @@
+package Academy;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+public class HomeTest extends Base {
+	
+	@Test
+	public void basepageNavigation() throws IOException
+	{
+		driver=initilializeDriver();
+		System.out.println("this program is running");
+		driver.close();
+}
+}

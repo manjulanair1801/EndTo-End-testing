@@ -1,0 +1,34 @@
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+
+public class Base {
+	public WebDriver driver;
+
+	public void initilializeDriver()
+	{
+		Properties prop =new Properties();
+		FileInputStream fls =new FileInputStream("");
+		prop.load(fls);
+		String browsername =prop.getProperty("browser");
+		
+		if (browsername == "chrome") {
+			//execute the chrome browser
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\manju\\EclipseWorkspace1\\E2EProject\\src\\test\\resources\\Driver\\chromedriver.exe");
+			 driver = new ChromeDriver();
+			
+		}else if
+		{
+			driver = new FirefoxDriver();
+			System.setProperty("webdriver.driver.geckodriver","C:\\Users\\manju\\EclipseWorkspace1\\E2EProject\\src\\test\\resources\\Driver\\geckodriver.exe" )
+			//execute the firefox browser
+		}else if
+		{
+			//execute the IE
+		}
+		
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
+	}
+}

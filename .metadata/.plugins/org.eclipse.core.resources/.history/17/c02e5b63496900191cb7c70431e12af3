@@ -1,0 +1,24 @@
+package Academy;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+
+public class HomePage {
+	public WebDriver driver;
+	public static  FileInputStream fls;
+	public Properties prop;
+	
+	public void intialization() throws Throwable {
+	 prop = new Properties ();
+	 fls=new FileInputStream("C:\\Users\\manju\\EclipseWorkspace1\\E2EProject1\\src\\test\\resources\\Properties\\data.properties");
+	 prop.load(fls);
+	 
+		
+	}
+	public static void main(String[] args) {
+	System.out.println(fls);
+}
+}

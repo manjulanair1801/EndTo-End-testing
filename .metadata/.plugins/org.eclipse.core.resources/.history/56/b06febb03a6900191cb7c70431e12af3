@@ -1,0 +1,15 @@
+package Academy;
+
+
+public class HomeTest extends Base {
+	
+	@Test
+	public void basepageNavigation()
+	{
+		driver=initilializeDriver();
+		driver. get("http://qaclickacademy.com");
+		
+	}
+
+	
+}
